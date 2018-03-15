@@ -1,3 +1,4 @@
-from download import download
+from download import Crawler
 
-print(download('https://top.zhan.com'))
+crawler_obj = Crawler()
+crawler_obj.link_crawler('https://movie.douban.com', '^http(s)?://movie.douban.com.*$')
